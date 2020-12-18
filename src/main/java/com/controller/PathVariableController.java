@@ -13,4 +13,5 @@ public class PathVariableController {
         model.addAttribute("name",name);
         return "PathValue";
     }
+
 }
