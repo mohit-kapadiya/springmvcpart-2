@@ -13,7 +13,7 @@ public class ExceptionController {
     public String exception(){
         String string=null;
         System.out.println(string.length());
-        return "About";
+        return "Welcome";
     }
     @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(value = NullPointerException.class)
