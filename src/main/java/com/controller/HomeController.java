@@ -8,24 +8,25 @@ import org.springframework.web.servlet.view.RedirectView;
 public class HomeController {
     //Redirect url using 'redirect prefix'
     @RequestMapping("/home")
-    public String home(){
+    public String home() {
         return "Home";
     }
 
     @RequestMapping("/about")
-    public String about(){
+    public String about() {
         return "redirect:/home";
     }
 
     //Redirect url using 'RedirectView'
     @RequestMapping("/redirect1")
-    public RedirectView redirect1(){
-        RedirectView redirectView=new RedirectView();
+    public RedirectView redirect1() {
+        RedirectView redirectView = new RedirectView();
         redirectView.setUrl("redirect2");
         return redirectView;
     }
+
     @RequestMapping("/redirect2")
-    public String redirect2(){
+    public String redirect2() {
         return "Home";
     }
 

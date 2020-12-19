@@ -10,13 +10,14 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 @Controller
 public class FileUploadController {
     @RequestMapping("/fileupload")
-    public String fileForm(){
+    public String fileForm() {
         return "FileUpload";
     }
-    @RequestMapping(value = "/uploadFile" ,method = RequestMethod.POST )
-    public String fileUpload(@RequestParam("profile") CommonsMultipartFile file){
-       System.out.println("file uploaded handler");
-       System.out.println(file.getOriginalFilename());
+
+    @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
+    public String fileUpload(@RequestParam("profile") CommonsMultipartFile file) {
+        System.out.println("file uploaded handler");
+        System.out.println(file.getOriginalFilename());
         return "FileSuccess";
     }
 }

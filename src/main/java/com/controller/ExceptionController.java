@@ -10,14 +10,15 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ControllerAdvice
 public class ExceptionController {
     @RequestMapping("/process")
-    public String exception(){
-        String string=null;
+    public String exception() {
+        String string = null;
         System.out.println(string.length());
         return "Welcome";
     }
+
     @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
     @ExceptionHandler(value = NullPointerException.class)
-    public String handleError(){
+    public String handleError() {
         return "ErrorPage";
     }
 }
