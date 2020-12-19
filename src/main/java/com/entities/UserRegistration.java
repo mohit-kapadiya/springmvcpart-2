@@ -16,44 +16,44 @@ public class UserRegistration {
         return name;
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public Date getbDate() {
-        return bDate;
-    }
-
-    public List<String> getCourse() {
-        return course;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public String getType() {
-        return type;
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
+    public Date getbDate() {
+        return bDate;
+    }
+
     public void setbDate(Date bDate) {
         this.bDate = bDate;
+    }
+
+    public List<String> getCourse() {
+        return course;
     }
 
     public void setCourse(List<String> course) {
         this.course = course;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String getType() {
+        return type;
     }
 
     public void setType(String type) {

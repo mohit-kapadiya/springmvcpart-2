@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class StaticController {
     @RequestMapping("/data")
-    public String staticData(){
+    public String staticData() {
         return "StaticData";
     }
-
 }

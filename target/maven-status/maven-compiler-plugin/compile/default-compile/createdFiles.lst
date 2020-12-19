@@ -1,0 +1,11 @@
+com/entities/Address.class
+com/controller/FileUploadController.class
+com/entities/UserRegistration.class
+com/controller/PathVariableController.class
+com/controller/FormController.class
+com/controller/HomeController.class
+com/controller/SearchController.class
+com/controller/interceptor/MyInterceptor.class
+com/controller/interceptor/InterceptController.class
+com/controller/StaticController.class
+com/controller/ExceptionController.class
